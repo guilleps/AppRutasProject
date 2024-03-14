@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ComplementosInterfaz.Compartido.Inicio.ValidarRecuperacion">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/_33_64_ej"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/ventanaSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="620dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tituloSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperación de contraseña"
+        android:gravity="center"
+        android:textColor="#7CB342"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/ventanaSesion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/textoSesion"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hemos enviado un mensaje a tu Bandeja de Entrada de el correo que está registrado y has ingresado.
+El mensaje tiene un código de recuperación"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etCorreoRecuperacion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="000 - 000 - 000"
+        android:textColor="#000000"
+        android:backgroundTint="#8E8E8E"
+        android:textColorHint="#8E8E8E"
+        android:padding="15dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textoSesion"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnValidarCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validar código"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/etCorreoRecuperacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/custom_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textoRecuperacion"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Si no te llegó ningún mensaje a tu Bandeja de Entrada, revisa en Spam o sino te lo reenviamos."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/btnValidarCode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnReenviarCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textoRecuperacion"
+        android:text="Reenviar código"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

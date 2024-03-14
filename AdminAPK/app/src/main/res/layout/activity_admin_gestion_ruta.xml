@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".AdminGestionRuta">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnAtras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tituloGestionRutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Rutas"
+        android:textColor="#7CB342"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.070" />
+
+    <TextView
+        android:id="@+id/textRR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rutas registradas: "
+        android:textColor="#A5A5A5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloGestionRutas"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="330dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRR"
+        app:layout_constraintVertical_bias="0.2">
+
+        <!-- Fila de encabezado -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Ruta"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Operaciones"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Filas de datos -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="A"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnModificarRuta"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Modificar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEliminarRuta"
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="B1"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Modificar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="C"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Modificar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="BC"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Modificar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="LV"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Modificar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:textSize="13sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Agrega más filas según sea necesario -->
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNuevaRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Agregar nueva ruta"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

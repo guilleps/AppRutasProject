@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context="ComplementosInterfaz.administrador.Horarios.modificarHorario">
+
+    <LinearLayout
+        android:id="@+id/tituloGestionHorario"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnAtras"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Gestión de Horarios"
+            android:textColor="#70AD47"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineHorario"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#70AD47"
+        app:layout_constraintTop_toBottomOf="@id/tituloGestionHorario"/>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/lineHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MODIFICAR HORARIO"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"
+                android:textSize="16sp"
+                android:textColor="#7F7F7F"
+                android:padding="15dp"
+                android:layout_marginLeft="25dp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_edittext"
+                android:textColor="#000000"
+                android:textColorHint="#8E8E8E"
+                android:textSize="16sp"
+                android:text="4:00 am"
+                android:padding="10dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_edittext"
+                android:textColor="#000000"
+                android:textColorHint="#8E8E8E"
+                android:textSize="16sp"
+                android:text="9:00 pm"
+                android:padding="10dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/background_edittext"
+                android:textSize="16sp"
+                android:text="12 minutos"
+                android:textColor="#000000"
+                android:textColorHint="#8E8E8E"
+                android:padding="10dp"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MODIFICAR ASIGNACIÓN RUTA AL HORARIO"
+                android:layout_marginStart="25dp"
+                android:textSize="16sp"
+                android:textColor="#7F7F7F"
+                android:padding="15dp"
+                android:layout_marginLeft="25dp" />
+
+            <TableLayout
+                android:id="@+id/tablahorarioAsig"
+                android:layout_width="150dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:paddingVertical="10dp"
+                        android:text="Ruta"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:buttonTint="#000000"
+                            android:layout_height="wrap_content"
+                            android:text="A" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:gravity="center"
+                            android:buttonTint="#000000"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:text="LV" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:gravity="center"
+                            android:buttonTint="#000000"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:layout_height="wrap_content"
+                            android:text="BC" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:checked="false"
+                            android:buttonTint="#000000"
+                            android:layout_height="wrap_content"
+                            android:text="B1" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:paddingVertical="10dp"
+                            android:buttonTint="#000000"
+                            android:checked="false"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"
+                            android:text="V" />
+
+                    </RadioGroup>
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#70AD47"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:backgroundTint="#70AD47"
+                    android:text="Restaurar todo"
+                    android:padding="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnGuardarHorarioModificado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#ED7D31"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginVertical="10dp"
+                    android:text="Guardar"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

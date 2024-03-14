@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDED"
+    tools:context="ComplementosInterfaz.pasajero.consultas.ConsultarHorarios">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/btnAtras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_24"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tituloHorario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="16dp"
+                android:text="HORARIOS"
+                android:textColor="#F4511E"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textFrecuenciaRutas"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="FRECUENCIAS DE RUTAS"
+                android:textColor="#7CB342"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="35dp" />
+
+            <TextView
+                android:id="@+id/infoFrecuenciaRutas1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="A continuación verás una lista con todos los horarios de las rutas que pertenecem  a la empresa"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp" />
+
+            <TextView
+                android:id="@+id/infoFrecuenciaRutas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiempo estimado de cada cuanto salen las unidades"
+                android:textColor="#7F7F7F"
+                android:textSize="13sp"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:id="@+id/letraAIcon"
+                        android:layout_height="60dp"
+                        android:background="@drawable/imagen1"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/textAinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraAIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 5:00 AM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraAIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textAinfo"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraAIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 9:54 PM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraAIcon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraAIcon"
+                        android:gravity="center_vertical"
+                        android:background="#7F7F7F"
+                        android:layout_toRightOf="@id/letraAIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toEndOf="@id/letraAIcon"
+                        android:gravity="center_vertical"
+                        android:text="Frecuencia: 10 minutos"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraAIcon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:id="@+id/letraB1Icon"
+                        android:layout_height="60dp"
+                        android:background="@drawable/imagen2"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/textB1info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraB1Icon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 5:00 AM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraB1Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textB1info"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraB1Icon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 9:54 PM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraB1Icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraB1Icon"
+                        android:gravity="center_vertical"
+                        android:background="#7F7F7F"
+                        android:layout_toRightOf="@id/letraB1Icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toEndOf="@id/letraB1Icon"
+                        android:gravity="center_vertical"
+                        android:text="Frecuencia: 10 minutos"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraB1Icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:id="@+id/letraLVIcon"
+                        android:layout_height="60dp"
+                        android:background="@drawable/imagen3"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/textLVinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraLVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 5:00 AM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraLVIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textLVinfo"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraLVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 9:54 PM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraLVIcon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraLVIcon"
+                        android:gravity="center_vertical"
+                        android:background="#7F7F7F"
+                        android:layout_toRightOf="@id/letraLVIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toEndOf="@id/letraLVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Frecuencia: 10 minutos"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraLVIcon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:id="@+id/letraBCIcon"
+                        android:layout_height="60dp"
+                        android:background="@drawable/imagen4"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/textBCinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraBCIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 5:00 AM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraBCIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textBCinfo"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraBCIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 9:54 PM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraBCIcon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraBCIcon"
+                        android:gravity="center_vertical"
+                        android:background="#7F7F7F"
+                        android:layout_toRightOf="@id/letraBCIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toEndOf="@id/letraBCIcon"
+                        android:gravity="center_vertical"
+                        android:text="Frecuencia: 10 minutos"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraBCIcon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:id="@+id/letraVIcon"
+                        android:layout_height="60dp"
+                        android:background="@drawable/imagen5"
+                        android:padding="12dp" />
+
+                    <TextView
+                        android:id="@+id/textVinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 5:00 AM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraVIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/textVinfo"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Horario Salida del Primer Bus: 9:54 PM"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraVIcon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/letraVIcon"
+                        android:gravity="center_vertical"
+                        android:background="#7F7F7F"
+                        android:layout_toRightOf="@id/letraVIcon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toEndOf="@id/letraVIcon"
+                        android:gravity="center_vertical"
+                        android:text="Frecuencia: 10 minutos"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/letraVIcon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="50dp"
+                    android:layout_height="wrap_content" >
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

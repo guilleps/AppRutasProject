@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_de_consultas"
+        android:label=""
+        android:roundIcon="@drawable/app_de_consultas"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rutas"
+        tools:targetApi="31">
+        <activity
+            android:name="ComplementosInterfaz.administrador.Unidades.visualizarUnidades"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Choferes.visualizarChoferes"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="ComplementosInterfaz.pasajero.gestionarUsuario.ModificarCuenta"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.FinalizarRecuperacion"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.EnviarRecuperarion"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.ValidarRecuperacion"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Comentarios.Comentario"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.pasajero.consultas.ConsultarTarifas"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.pasajero.consultas.ConsultarRutas"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.pasajero.consultas.ConsultarHorarios"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.pasajero.PasajeroMapa"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.Registrarse"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Unidades.modificarUnidad"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Unidades.agregarUnidad"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Tarifas.modificarTarifa"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Tarifas.agregarTarifa"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Rutas.modificarRuta"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Rutas.agregarRuta"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Horarios.modificarHorario"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Horarios.HorarioAgregar"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Comentarios.ComentarioAgregar"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Choferes.modificarChofer"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Choferes.agregarChofer"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Unidades.gestionarUnidades"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Tarifas.gestionarTarifa"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Rutas.gestionarRutas"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Comentarios.Foro"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Choferes.gestionarChoferes"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Horarios.gestionarHorarios"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.administrador.Gestionar.Gestionar"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.Loguearse"
+            android:exported="false" />
+        <activity
+            android:name="ComplementosInterfaz.Compartido.Inicio.Inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

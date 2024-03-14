@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".PasajeroLogeo">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/_33_64_ej"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
+
+    <View
+        android:id="@+id/ventanaSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="620dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <TextView
+        android:id="@+id/tituloSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textColor="#7CB342"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ventanaSesion"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/textoSesion"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Si ya tienes una cuenta, ingresa tu correo y contraseña para empezar a consultar rutas y todo lo relacionado con tus viajes en Nueva California S.A."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloSesion"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa Correo"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoSesion"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <EditText
+        android:id="@+id/etContraseña"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa Contraseña"
+        android:maxLines="1"
+        android:password="true"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/btnLogeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCorreo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Deprecated"
+        android:autofillHints="auto"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogeo"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Entrar"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloSesion"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <TextView
+        android:id="@+id/textorecuperacionContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Recuperar contraseña"
+        android:textColor="#F4511E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogeo"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/textoRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Si aún no tienes una cuenta, crea una aquí"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textorecuperacionContraseña"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCrearcuenta"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Crear cuenta"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@id/ventanaSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoRegistrarse"
+        app:layout_constraintVertical_bias="0.01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

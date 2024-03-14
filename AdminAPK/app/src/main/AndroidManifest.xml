@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminAPK"
+        tools:targetApi="31">
+        <activity
+            android:name=".AdminGestionComentarioAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionUnidadModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionUnidadAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionUnidad"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionChoferModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionChoferAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionChofer"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionComentario"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionRutaAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionRutaModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionRuta"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionTarifaAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionTarifaModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionTarifa"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionHorarioAgregar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionHorarioModificar"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestionHorario"
+            android:exported="false" />
+        <activity
+            android:name=".AdminGestion"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogeo"
+            android:exported="false" />
+        <activity
+            android:name=".AdminInicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

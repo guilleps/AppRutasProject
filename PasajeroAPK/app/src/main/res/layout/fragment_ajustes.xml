@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDED"
+    android:layout_height="match_parent"
+    tools:context=".menu_bottom.AjustesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginTop="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cnfgIcon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_settings_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@id/cnfgIcon"
+                android:text="Configuración"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/cnfgIcon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border_fondo_fragmentperfil"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/darkIcon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/color_confg"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_dark_mode_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/darkIcon"
+                    android:text="Modo oscuro"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/darkIcon" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:switchMinWidth="50dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/telephoneIcon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/color_confg"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_notifications_off_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/telephoneIcon"
+                    android:text="Notificaciones"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/telephoneIcon" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:switchMinWidth="50dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/messageIcon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/color_confg"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_g_translate_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/messageIcon"
+                    android:text="Idioma"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/messageIcon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/passwordIcon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/color_confg"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_warning_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/passwordIcon"
+                    android:text="Soporte"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/passwordIcon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/border_fondo_fragmentperfil"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:contentDescription="@null"
+                    android:id="@+id/salirIcon"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/color_confg"
+                    android:padding="12dp"
+                    android:src="@drawable/baseline_logout_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/salirIcon"
+                    android:text="Cerrar sesión"
+                    android:textSize="17sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/salirIcon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

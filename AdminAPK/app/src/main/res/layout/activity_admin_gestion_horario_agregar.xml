@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".AdminGestionHorarioAgregar">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/tituloGestionHorario"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnAtras"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Gestión de Horarios"
+                android:textColor="#70AD47"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#70AD47" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tituloGestionHorario">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:padding="15dp"
+                android:text="AGREGAR HORARIO"
+                android:textColor="#7F7F7F"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:hint="Ingresa Hora de salida primer Bus"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:hint="Ingresa Hora de salida útlimo Bus"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="#ffffff"
+                android:hint="Ingresa frecuencia de salida"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:text="ASIGNACIÓN RUTA AL HORARIO"
+                android:textColor="#7F7F7F"
+                android:textSize="16sp" />
+
+            <TableLayout
+                android:id="@+id/tablahorarioAsig"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp">
+
+                <!-- Fila de encabezado -->
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Ruta"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                <!-- Filas de datos -->
+                <TableRow>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="A"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="LV"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="C"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="V"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="BC"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <!-- Agrega más filas según sea necesario -->
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#70AD47" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#70AD47"
+                    android:padding="15dp"
+                    android:text="Vaciar todo"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnGuardarHorario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="#ED7D31"
+                    android:padding="15dp"
+                    android:text="Guardar"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rutas</string>
+
+    <string-array name="route_bus">
+        <item>Ruta: A</item>
+        <item>Ruta: BC</item>
+        <item>Ruta: B1</item>
+        <item>Ruta: LV</item>
+        <item>Ruta: V</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

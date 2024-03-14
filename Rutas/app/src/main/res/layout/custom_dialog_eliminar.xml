@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_custom_dialog">
+
+    <TextView
+        android:id="@+id/textEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="¿Esta seguro que desea eliminar este elemento?"
+        android:layout_marginTop="22dp"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEliminarConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#70AD47"
+        android:layout_marginVertical="15dp"
+        android:text="Confirmar"
+        android:textColor="#ffffff"
+        android:layout_marginEnd="170dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEliminar"
+        android:layout_marginRight="170dp" />
+
+    <Button
+        android:id="@+id/btnEliminarCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:backgroundTint="#70AD47"
+        android:text="Cancelar"
+        android:layout_marginVertical="15dp"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEliminar"
+        android:layout_marginLeft="170dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

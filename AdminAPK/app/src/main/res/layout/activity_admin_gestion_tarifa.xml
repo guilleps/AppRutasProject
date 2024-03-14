@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".AdminGestionTarifa">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnAtras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tituloGestionTarifas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión de Tarifas"
+        android:textColor="#7CB342"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/textTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarifas registrados "
+        android:textColor="#A5A5A5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloGestionTarifas"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TableLayout
+        android:id="@+id/tablaTarifa"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTR"
+        app:layout_constraintVertical_bias="0.02">
+
+        <!-- Fila de encabezado -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:text="Tipo"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="Operaciones"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <!-- Filas de datos -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Urbano" />
+
+            <Button
+                android:id="@+id/btnModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                android:backgroundTint="#ED7D31"
+                android:gravity="center"
+                android:text="MODIFICAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnEliminarTarifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Directo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                android:backgroundTint="#ED7D31"
+                android:gravity="center"
+                android:text="MODIFICAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Universitario"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                android:backgroundTint="#ED7D31"
+                android:gravity="center"
+                android:text="MODIFICAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Escolar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textSize="13sp"
+                android:backgroundTint="#ED7D31"
+                android:gravity="center"
+                android:text="MODIFICAR"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="13sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:backgroundTint="#ED7D31"
+                android:text="Eliminar"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAgregartar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="Agregar nueva tarifa"
+        android:textColor="#ffffff"
+        app:layout_constraintVertical_bias="0.1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablaTarifa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
