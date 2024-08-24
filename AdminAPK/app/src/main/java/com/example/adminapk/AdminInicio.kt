@@ -19,5 +19,6 @@ class AdminInicio : AppCompatActivity() {
             val intent = Intent(this, AdminLogeo::class.java)
             startActivity(intent)
         }
+        
     }
 }
