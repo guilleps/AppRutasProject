@@ -9,6 +9,7 @@ class PasajeroHorario : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pasajero_horario)
 
+
         val btnAtras : ImageView = findViewById(R.id.btnAtras)
         btnAtras.setOnClickListener {
             finish()
